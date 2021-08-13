@@ -6,8 +6,8 @@ namespace AStar.Collections.MultiDimensional
     {
         int Height { get; }
         int Width { get; }
-        T this[int row, int column] { get; set; }
-        T this[Position position] { get; set; }
+        T this[int row, int column] { get; }
+        T this[Position position] { get; }
         IEnumerable<Position> GetSuccessorPositions(Position node, bool optionsUseDiagonals = false);
     }
 }
